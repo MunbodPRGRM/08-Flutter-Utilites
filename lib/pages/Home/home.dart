@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_utilities/config/shared/app_data.dart';
 import 'package:flutter_utilities/pages/FlexColorScheme/flexcolor.dart';
 import 'package:flutter_utilities/pages/GGFont/ggfont.dart';
 import 'package:flutter_utilities/pages/GetX/getx.dart';
+import 'package:flutter_utilities/pages/Provider/provider.dart';
 import 'package:flutter_utilities/pages/main_drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -64,6 +67,13 @@ class _HomePageState extends State<HomePage> {
                   Get.to(() => const FlexColorPage());
                 },
                 child: const Text('Flex Color'),
+              ),
+              FilledButton(
+                onPressed: () {
+                  context.read<AppData>().userEmail = 'Test@gmail.com';
+                  Get.to(() => ProviderPage());
+                },
+                child: Text('Demo Provider'),
               ),
             ],
           ),
