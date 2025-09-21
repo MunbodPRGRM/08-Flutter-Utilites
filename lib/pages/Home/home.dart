@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_utilities/pages/GGFont/ggfont.dart';
 import 'package:flutter_utilities/pages/GetX/getx.dart';
 import 'package:flutter_utilities/pages/main_drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -50,6 +51,12 @@ class _HomePageState extends State<HomePage> {
                   Get.to(() => const GetXPage());
                 },
                 child: const Text('Get'),
+              ),
+              FilledButton(
+                onPressed: () {
+                  Get.to(() => const GGFontPage());
+                },
+                child: const Text('Google Font'),
               ),
             ],
           ),
