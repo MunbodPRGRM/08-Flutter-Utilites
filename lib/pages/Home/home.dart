@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_utilities/pages/GetX/getx.dart';
 import 'package:flutter_utilities/pages/main_drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -42,6 +44,12 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text('Toast'),
+              ),
+              FilledButton(
+                onPressed: () {
+                  Get.to(() => const GetXPage());
+                },
+                child: const Text('Get'),
               ),
             ],
           ),
