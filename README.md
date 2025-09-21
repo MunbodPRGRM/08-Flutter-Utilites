@@ -1,17 +1,65 @@
-# flutter_utilities
+# Flutter Utilities - Classroom Project
 
-A new Flutter project.
+โปรเจกต์นี้เป็นตัวอย่างการทำงาน Flutter หลายฟีเจอร์ สำหรับใช้ในการเรียนรู้และทดลองในคาบเรียน  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📚 ฟีเจอร์ที่รวมอยู่ในโปรเจกต์
 
-A few resources to get you started if this is your first Flutter project:
+1. **Drawer & PopScope**  
+   - ใช้ Drawer สำหรับเมนูด้านข้าง  
+   - ใช้ PopScope ป้องกันการออกจากหน้าโดยไม่ได้ตั้งใจ
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Bottom Navigation Bar**  
+   - สลับหน้าได้ด้วยแท็บด้านล่าง  
+   - ใช้ตัวแปร `currentPage` สำหรับควบคุมหน้า
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# 08-Flutter-Utilites" 
+3. **Pub.dev Packages**  
+   - เช่น [FlutterToast](https://pub.dev/packages/fluttertoast) สำหรับแสดง Toast  
+
+4. **GetX**  
+   - ใช้สำหรับ Navigation และ State Management แบบง่าย  
+
+5. **Google Fonts**  
+   - ใช้เปลี่ยน Font ของแอปด้วย Google Font  
+
+6. **FlexColorScheme**  
+   - ใช้ปรับธีมสีของแอปได้ง่าย  
+
+7. **Provider**  
+   - ตัวอย่างการใช้ `Provider` สำหรับ State Management แบบ Reactive  
+
+8. **Date Picker (Thai)**  
+   - ปฏิทินแบบไทย และแสดงวันเดือนปีไทย  
+
+---
+
+## ⚡ การใช้งาน
+
+**โหลดแล้วแตกไฟล์ จากนั้นให้ใช้คำสั่งพวกนี้หากไม่สามารถรันได้ตั้งแต่ครั้งแรก**  
+
+```bash
+flutter clean
+flutter pub get
+`````
+---
+
+## 📌 หมายเหตุ
+  -  โปรเจกต์นี้เป็นตัวอย่างการเรียนรู้เท่านั้น
+  -  ใช้ Flutter 3.24+ และ Android SDK 36 ขึ้นไป
+  -  เปิด Developer Mode บน Windows หากเจอปัญหา symlink
+
+---
+
+## 🔗 Packages ที่ใช้
+| Package             | Purpose                       |
+| ------------------- | ----------------------------- |
+| `fluttertoast`      | แสดง Toast                    |
+| `get`               | Navigation & State Management |
+| `google_fonts`      | ปรับ Font ของแอป              |
+| `flex_color_scheme` | ปรับ Theme สี                 |
+| `provider`          | State Management แบบ Reactive |
+| `flutter_rounded_date_picker` | เรียกใช้งานปฏิทิน      |
+| `flutter_localiztaion` | ให้ปฏิทินแสดงเป็นภาษาไทยได้ |
+
+---
