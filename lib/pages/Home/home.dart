@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_utilities/config/shared/app_data.dart';
+import 'package:flutter_utilities/pages/Calendar/calendar.dart';
 import 'package:flutter_utilities/pages/FlexColorScheme/flexcolor.dart';
 import 'package:flutter_utilities/pages/GGFont/ggfont.dart';
 import 'package:flutter_utilities/pages/GetX/getx.dart';
@@ -74,6 +75,12 @@ class _HomePageState extends State<HomePage> {
                   Get.to(() => ProviderPage());
                 },
                 child: Text('Demo Provider'),
+              ),
+              FilledButton(
+                onPressed: () {
+                  Get.to(() => const CalendarPage());
+                },
+                child: const Text('Calendar'),
               ),
             ],
           ),
