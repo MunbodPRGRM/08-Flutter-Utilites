@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_utilities/pages/FlexColorScheme/flexcolor.dart';
 import 'package:flutter_utilities/pages/GGFont/ggfont.dart';
 import 'package:flutter_utilities/pages/GetX/getx.dart';
 import 'package:flutter_utilities/pages/main_drawer.dart';
@@ -57,6 +58,12 @@ class _HomePageState extends State<HomePage> {
                   Get.to(() => const GGFontPage());
                 },
                 child: const Text('Google Font'),
+              ),
+              FilledButton(
+                onPressed: () {
+                  Get.to(() => const FlexColorPage());
+                },
+                child: const Text('Flex Color'),
               ),
             ],
           ),
