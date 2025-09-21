@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_utilities/pages/NavPages/page1.dart';
 import 'package:flutter_utilities/pages/NavPages/page2.dart';
